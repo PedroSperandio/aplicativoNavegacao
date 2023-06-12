@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+   <!--
+    A classe activity_main é responsavel pela criação de
+    todo o layout do aplicativo, a parte visual.
+-->
+
+   <!-- Criação de um layout linear com uma imagem .jpg como fundo-->
+         <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/background_app"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- TextView responsável pela criação do titulo do aplicativo -->
+            <TextView
+                android:id="@+id/navegacao"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:background="#3A3E57"
+                android:gravity="center|center_horizontal"
+                android:text="@string/app_name"
+                android:textColor="#FAF9F5"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da primeira legenda "Localização Atual" -->
+            <TextView
+                android:id="@+id/Loc_Atual"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:gravity="center_horizontal"
+                android:text="@string/localizacao_atual"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="@string/localizacao_atual" />
+
+            <!-- TextView responsavel pela exibição do valor da Localização Atual -->
+            <TextView
+                android:id="@+id/localizacaoAtual"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|center_horizontal"
+                android:textColor="#FAF9F5"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da legenda "Localização de Destino" -->
+            <TextView
+                android:id="@+id/locDestino"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:shadowColor="#F8F6F6"
+                android:text="@string/destino"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela exibição do valor da Localização de destino -->
+            <TextView
+                android:id="@+id/Destino"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#FAF9F5"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da legenda "Distancia percrorrida" -->
+            <TextView
+                android:id="@+id/distanciaPercorrida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/distancia_estimada"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela exibição do valor da Distancia percorrida -->
+            <TextView
+                android:id="@+id/distanciaPercorrer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#FAF9F5"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da legenda "Velocidade atual" -->
+            <TextView
+                android:id="@+id/Vel_atual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/velocidade_atual"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela exibição do valor da Velocidade Atual -->
+            <TextView
+                android:id="@+id/velocidadeAtual"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#FAF9F5"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da legenda "Velocidade recomendada" -->
+            <TextView
+                android:id="@+id/Vel_estimada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/velocidade_estimada"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela exibição do valor da Velocidade Recomendada -->
+            <TextView
+                android:id="@+id/velocidadeEstimada"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#FAF9F5"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da legenda "Tempo de deslocamento" -->
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tempoDeslocamento"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela exibição do valor do tempo de deslocamento -->
+            <TextView
+                android:id="@+id/tempoDeslocamento"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da legenda "Consumo(Km/L)" -->
+            <TextView
+                android:id="@+id/consumoCombustivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/consumo"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela exibição do valor do consumo do veiculo -->
+            <TextView
+                android:id="@+id/ConsumoSaida"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#FAF9F5"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela criação da legenda "Tempo restante" -->
+            <TextView
+                android:id="@+id/tempoRestanteTexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/TempoRestante"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- TextView responsavel pela exibição do valor do tempo restante para finalizar a rota -->
+            <TextView
+                android:id="@+id/tempoRestante"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center"
+                android:textColor="#FAF9F5"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Criação do botão de iniciar navegação -->
+            <Button
+                android:id="@+id/iniciarNavegacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3A3E57"
+                android:onClick="iniciarNav"
+                android:text="@string/Iniciar"
+                android:textColor="#FAF9F5"
+                android:textColorHighlight="#090808"
+                android:textColorLink="#FAF9F5"
+                android:textStyle="bold"
+                app:iconTint="#1B1A1A"
+                tools:ignore="OnClick"
+                tools:text="@string/Iniciar" />
+
+            <!-- Criação do botão de finalizar navegação -->
+            <Button
+                android:id="@+id/finalizarNavegacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3A3E57"
+                android:onClick="reset"
+                android:text="@string/finalizar"
+                android:textColor="#FAF9F5"
+                android:textColorLink="#FAF9F5"
+                android:textStyle="bold"
+                tools:ignore="OnClick" />
+
+            <!-- Criação do botão de sair do aplicativo -->
+            <Button
+                android:id="@+id/sairApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3A3E57"
+                android:onClick="sairApp"
+                android:text="@string/sair"
+                android:textColor="#FAF9F5"
+                android:textColorLink="#FAF9F5"
+                android:textStyle="bold" />
+
+
+
+             </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

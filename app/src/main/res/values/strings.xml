@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NavTime</string>
+        <string name="localizacao_atual">Localização Atual:</string>
+        <string name="velocidade_atual">Velocidade Atual:</string>
+        <string name="distancia_estimada">Distância Percorrida:</string>
+        <string name="velocidade_estimada">Velocidade recomendada:</string>
+        <string name="Iniciar">Iniciar navegação</string>
+        <string name="finalizar">Finalizar navegação</string>
+        <string name="sair">Sair do Aplicativo</string>
+        <string name="tempoDeslocamento">Tempo de deslocamento:</string>
+        <string name="consumo">Consumo(Km/L):</string>
+        <string name="saidaLocAtual">valor1</string>
+        <string name="saidaVelAtual">valor3</string>
+        <string name="saidaTempEst">valor2</string>
+        <string name="saidaVelest">valor4</string>
+        <string name="destino">Localização de destino:</string>
+        <string name="TempoRestante">Tempo Restante:</string>
+    <string name="TempoRestanteSaida">Tempo Restante:</string>
+</resources>
